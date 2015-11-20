@@ -1,3 +1,6 @@
+name: TimoSolo
+description: Thoughts on Life, the Universe and Everything
+url: http://timosolo.me
 markdown: kramdown
 permalink: /blog/:title
 defaults:
@@ -7,3 +10,4 @@ defaults:
       type: "posts" 
     values:
       layout: "post"
+      author: Timothy Solomon

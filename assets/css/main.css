@@ -3707,3 +3707,6 @@
 	p {
 		font-size: 13pt;
 	}
+	blockquote > p {
+		margin: 0;
+	}
