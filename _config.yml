@@ -3,6 +3,8 @@ description: Thoughts on Life, the Universe and Everything
 url: http://timosolo.me
 markdown: kramdown
 permalink: /blog/:title
+gems:
+  - jekyll-redirect-from
 defaults:
   -
     scope:
