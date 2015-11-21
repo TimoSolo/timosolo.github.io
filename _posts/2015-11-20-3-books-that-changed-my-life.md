@@ -8,7 +8,7 @@ I like to read books. I like to _listen_ to books even more, because I can learn
 <a href="http://www.audible.com/listener/Timothy/A2IDXV9X465RT6/" target="_blank" >You can check them out here</a>. All highly recommended. But there are 3 that changed my life. Ideas that took my flat world-view and turned it inside out. Concepts that gave me the courage to live my own life.
 
 
-<a href="http://amzn.to/1QuSF7e" target="_blank"><img src="/images/anoc.jpg" align="left" width="200" style="padding:0 30px 10px 0">1) The Art of Non Conformity.</a>
+<a href="http://amzn.to/1QuSF7e" target="_blank"><img src="{{ site.url }}/images/anoc.jpg" align="left" width="200" style="padding:0 30px 10px 0">1) The Art of Non Conformity.</a>
 -----------------------------
 
  I've read this one two or three times. Written by the guy who decided not to live his life as the world expected him to, and instead travelled to every country on the globe. 
@@ -18,7 +18,7 @@ I like to read books. I like to _listen_ to books even more, because I can learn
 "The Art of Non-Conformity defies common assumptions about life and work while arming you with the tools to live differently. You'll discover how to live on your own terms by exploring creative self-employment, radical goal-setting, contrarian travel, and embracing life as a constant adventure."
 
 
-<a href="http://amzn.to/1MsrDd4" target="_blank"><img src="/images/livingwithless.jpg" align="left" width="200" style="padding:0 30px 10px 0">2) Simplify.</a>
+<a href="http://amzn.to/1MsrDd4" target="_blank"><img src="{{ site.url }}/images/livingwithless.jpg" align="left" width="200" style="padding:0 30px 10px 0">2) Simplify.</a>
 --------------------
 
 *currently on special for only $0.99*
@@ -32,7 +32,7 @@ Materialism tells you that success is having everything you want. Minimalism cou
 My dad was a big believer in the Freedom of Simplicity. The joy of owning less and the luxury of sleeping under the stars... When you realise that your possesions own you (and not the other way round), having less means you have more; more time, more freedom and more love for life.
 
 
-<a href="http://amzn.to/1QuSMji" target="_blank"><img src="/images/search.jpg" align="left" width="200" style="padding:0 30px 10px 0">3) Man's Search for Meaning</a>
+<a href="http://amzn.to/1QuSMji" target="_blank"><img src="{{ site.url }}/images/search.jpg" align="left" width="200" style="padding:0 30px 10px 0">3) Man's Search for Meaning</a>
 ---------------------------
 
 This one is a real Life-Changer. If you are going through a rough patch this will give perspective from someone who survived the worst of the worst. And if you are cruising through life, it will give you a new appreciation for it.

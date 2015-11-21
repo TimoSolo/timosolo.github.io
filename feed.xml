@@ -11,7 +11,7 @@
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
 				<media:content
-      url = "{{ site.url }}images/{{ post.image }}"
+      url = "{{ site.url }}/images/{{ post.image }}"
       type = "image/jpeg"
       medium = "image">
       </media:content>
