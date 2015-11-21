@@ -1,5 +1,6 @@
 ---
 image: books.jpg
+redirect_from: /3books
 ---
 
 I like to read books. I like to _listen_ to books even more, because I can learn new things and discovering new worlds while driving, or with my eyes closed (not at the same time :).
