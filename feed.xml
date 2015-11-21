@@ -21,7 +21,7 @@
 				{% if post.excerpt %}
 					<description>{{ post.excerpt | xml_escape }}</description>
 				{% endif %}
-				<content:encoded>{{ post.content | xml_escape }}</content:encoded>
+				<content:encoded><![CDATA[{{ post.content | xml_escape }}]]></content:encoded>
 				
 				<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
 				<link>{{ site.url }}{{ post.url }}</link>
