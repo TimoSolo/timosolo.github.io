@@ -3,7 +3,7 @@ image: friday.jpg
 permalink: /5-bullet-friday/2016-01-22/
 ---
 
-A quick post inspired by Tim Feriss' 5 Bullet Friday
+A quick post inspired by Tim Ferriss' 5 Bullet Friday
 
 **What I'm Reading:** 
 <br>_<a href="http://amzn.to/1WAyepX" target="_blank">How to Fail at Almost Everything and Still Win Big</a>_ by Scott Adams (you know - the guy who draws Dilbert). 
@@ -20,7 +20,7 @@ Wow, just discovered this band. Great music to chill out with a glass of red win
 <br>Great to catch up with an old friend and brainstorm some crazy ideas. Etienne has built some amazing games and Augmented Reality apps!
 
 **What I'm listening to:** 
-<br>_<a href="http://fourhourworkweek.com/2016/01/18/edward-norton-on-mastery-must-read-books-and-the-future-of-crowdfunding/" target="_blank">Tim Feriss podcast with Ed Norton</a>._
+<br>_<a href="http://fourhourworkweek.com/2016/01/18/edward-norton-on-mastery-must-read-books-and-the-future-of-crowdfunding/" target="_blank">Tim Ferriss podcast with Ed Norton</a>._
 <br>Great insight into the under-rated movies, <a href="https://www.crowdrise.com/" target="_blank">crowd funding</a> and more.
 
 **Thought provoker:** 
