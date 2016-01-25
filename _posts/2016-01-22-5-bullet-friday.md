@@ -15,9 +15,9 @@ Fav Quote: "Goals are for losers. Systems are for winners."
 <br>_<a href="https://soundcloud.com/sleepingatlast/north" target="_blank">North</a>_ by "Sleeping At Last".
 Wow, just discovered this band. Great music to chill out with a glass of red wine and ponder the past week. And _<a href="https://soundcloud.com/sleepingatlast/son" target="_blank">Son</a>_.. goosebumps - the lyrics are really moving.
 
-**Person of the week:** 
+**Person of Interest:** 
 <br>_<a href="https://www.linkedin.com/in/etiennejeandevilliers" target="_blank">Etienne de Villiers</a>_
-<br>Great to catch up with an old friend and brainstorm some crazy ideas. Etienne has built some amazing games and Augmented Reality apps!
+<br>Great to catch up with an old friend and brainstorm some crazy ideas. Etienne has built some amazing games and Augmented-Reality apps!
 
 **What I'm listening to:** 
 <br>_<a href="http://fourhourworkweek.com/2016/01/18/edward-norton-on-mastery-must-read-books-and-the-future-of-crowdfunding/" target="_blank">Tim Ferriss podcast with Ed Norton</a>._
