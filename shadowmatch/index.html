@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)http://www.shadowmatch.co.za/admin/graphs/results.php?applicant_id=443790&width=700&cluster_id=17 -->
+<html lang="en-uk"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <meta charset="utf-8">
+
+
+        <!-- JavaScript at the bottom, except for Modernizr -->
+
+    </head>
+    <body ><div id="graph"></div>
+
+
+        <script src="./results_files/jquery.js"></script>
+        <script src="./results_files/raphael.js"></script>
+        <script src="./results_files/g.raphael.js"></script>
+        <script src="./results_files/g.bar.js"></script>
+        <script>
+            //Order of definitions correspond to wieghts in XML e.g. w1 = Conceptual Capabilities
+            definitions_array = new Array ();
+            definitions_array [0] = {
+                order : 1, name : "Conceptual Capabilities", description : "The ability to work through a problem and find the correct solution to the problem."
+            };
+            definitions_array [1] = {
+                order : 2, name : "Propensity to Own", description : "Internal Locus of Control; the individual takes ownership to solve a problem or handle a challenge him/herself."
+            };
+            definitions_array [2] = {
+                order : 3, name : "Propensity to Hand-off", description : "External Locus of Control; indicates expectation of an outside agent to solve problems and handle difficulties for them."
+            };
+            definitions_array [3] = {
+                order : 4, name : "To Simplify", description : "This reflects the ability to simplify concepts, ideas or the working of a system. It shows how strong the person is in making complicated realities easier to understand."
+            };
+            definitions_array [4] = {
+                order : 5, name : "Resilience", description : "Some people give up easily when faced with a challenge and some apply themselves relentlessly to solve problems and overcome challenges. The worksheet evaluates the strength of the person to overcome challenges despite the difficulties experienced. Be aware of the fact that if the individual answers the question in a specific way, it might indicate a negative level of resilience."
+            };
+            definitions_array [5] = {
+                order : 6, name : "Propensity to Change", description : "Some people find it very difficult to adopt to change and to get used to new methods and applications. This questionnaire measures how well the individual handles change and adopts new methods."
+            };
+            definitions_array [6] = {
+                order : 7, name : "Frustration Handling", description : "This indicates how well the individual copes with frustrating circumstances. The higher the graph the better they are equipped to handle a frustrating situation."
+            };
+            definitions_array [7] = {
+                order : 8, name : "Team Inclination", description : "The system evaluates, according to the answers given, whether the individual prefers working as part of a team or whether he/she prefers working as an individual."
+            };
+            definitions_array [8] = {
+                order : 9, name : "Individual Inclination", description : "The system evaluates, according to the answers given, whether the individual prefers working as part of a team or whether he/she prefers working as an individual."
+            };
+            definitions_array [9] = {
+                order : 10, name : "Self-Motivation", description : "Some people has the ability to motivate themselves, some are dependent on external motivators to stay positive and motivated. This graph measures the individual’s ability to stay motivated despite the absence of external motivating agents."
+            };
+            definitions_array [10] = {
+                order : 11, name : "Routine", description : "This system evaluates the ability of the individual to stay positive despite the fact that the work he/she does are routine in nature and sometimes tedious. "
+            };
+            definitions_array [11] = {
+                order : 12, name : "Problem Solving", description : "The ability to solve problems on a conceptual and practical level."
+            };
+            definitions_array [12] = {
+                order : 13, name : "Responsiveness", description : "A low score on this indicates a slower ability to solve issues and decide on a solution to a problem. A high score indicates a very quick mind."
+            };
+            definitions_array [13] = {
+                order : 14, name : "Innovation", description : "The ability to find new ways of doing things and identify better processes and methods to improve on current ways of working. It also indicates the ability to think and work out of the box and create new realities."
+            };
+            definitions_array [14] = {
+                order : 15, name : "People Positive", description : "This calculates whether the individual has the ability to work with people in a positive way and to what level do they build positive relationships."
+            };
+            definitions_array [15] = {
+                order : 16, name : "Discipline", description : "The ability to work under extreme levels of discipline, in a highly disciplined working environment."
+            };
+            definitions_array [16] = {
+                order : 17, name : "Conflict Handling", description : "This indicates the ability to handle conflict with people and conflict in a positive and meaningful way. Running away from conflict, trying to avoid it is not in this sense regarded as a positive way to deal with conflict. "
+            };
+            definitions_array [17] = {
+                order : 18, name : "Altruism", description : ""
+            };
+            definitions_array [18] = {
+                order : 19, name : "Self-Confidence", description : ""
+            };
+            definitions_array [19] = {
+                order : 20, name : "Leadership", description : ""
+            };
+            //definitions_array[20]={order:21, name:"Time Efficiency", description:"" };
+
+            var has_animations = true;
+            function animate(obj, vals, duration, delay)
+            {
+                if (has_animations) {
+                    var anim = Raphael.animation(vals, duration, "easeOut");
+                    obj.animate(anim.delay(delay));
+                } else {
+                    obj.attr(vals); // just set it and forget it
+                }
+            }
+
+            function setApplicantDetails(x)
+            {
+                var is_top_ten = x['is_top_ten'].value;
+                var is_employee = (x['is_employee'].value == "1");
+                var is_resigned = (x['is_resigned'].value == "1");
+                var applicant_details_txt = page_name_txt = "";
+                if (443790 > 0)
+                {
+                    page_name_txt = "Individual Result";
+                }
+                else
+                {
+                    page_name_txt = "Benchmark";
+                }
+                if (x['company'].value)
+                    page_name_txt += " - " + x['company'].value;
+                applicant_details_txt = "";
+                if (x['applicant'].value)
+                    applicant_details_txt += "<b>Name:</b> " + x['applicant'].value + " ";
+                if (x['cell'].value)
+                    applicant_details_txt += "<b>Cell:</b> " + x['cell'].value + "  ";
+                if (x['work_tel'].value)
+                    applicant_details_txt += "<b>Tel (W):</b> " + x['work_tel'].value + "  ";
+                if (x['home_tel'].value)
+                    applicant_details_txt += "<b>Tel (H):</b> " + x['home_tel'].value + "  ";
+                if (x['email'].value)
+                    applicant_details_txt += "<b>Email:</b> " + x['email'].value + "  ";
+                //$("#pagename").html(page_name_txt);
+                //$("#details").html(applicant_details_txt);
+            }
+            function setBars(paper, x, type, xoffset,yoffset) {
+
+                data = x.attributes;
+                var yDiff = 48;
+                        
+                //console.log(data);
+                var barwidth = 24;
+                //Critical match= only 5 habits
+                var start = 0;
+                var end = 5;
+                var critical=true;
+                //If data more results - set Overall match
+                if (data.length>20) {
+                    // its the main graph, not critical
+                    critical=false;
+                    //Skip conceptual capabilities - shown seperately
+                    start=1;
+                    end=20
+                }
+
+                if(type=="survey") {
+                    for (var i = start; i < end; i++) // exlc 21 - time eff
+                    {
+                        //Graph bar
+                        var height =Math.max(-100,Math.min(100,data[i].value)); // clip
+                        var bar = paper.rect(xoffset+(i-1)*barwidth,yoffset+100-(height>0?height:0),barwidth,Math.abs(height));
+                        bar.attr({
+                            fill:"#B0B0B0",
+                            stroke:"#000",
+                            "stroke-width":"1",
+                            "stroke-linecap":"square"
+                        });
+                        //Text for score
+                        var t = paper.text(xoffset+(i-1)*barwidth+10,yoffset-19, Math.floor(height));
+                        t.attr({
+                            fill:"#666666",
+                            "font-size":"10px",
+                            "font-weight":"bold"
+                        });
+
+                        // habit titles
+                        //Critical habit - use number from attribute name to get correct title
+                        var titleNum;
+                        if (critical)
+                        {
+                            titleNum = parseInt(data[i].name.substring(1))-1;
+                        }
+                        else
+                        {
+                            titleNum = i;
+                        }
+                        //Use attribute name to get number of habit e.g. c16 = definitions_array[16].name
+                        var x=xoffset+((i-1)*barwidth)+15;
+                        var y=yoffset+209;
+                        var t = paper.text(x,y, definitions_array[titleNum].name );
+                        //var t = paper.print(x, y, definitions_array[i].name, paper.getFont("Times", 800), 30);
+					
+                        t.attr({
+                            fill:"#333333",
+                            font: '10px Helvetica, Arial',
+                            'text-anchor': 'end'
+                        });
+                        t.rotate(-60,x,y);
+                    } //end for
+
+                    // @todo Add Benchmark stability factor / Individual's match
+
+                    //Conceptual Questions and Task Efficiency result
+                    if (!critical)
+                    {
+                        var w1 = Math.round((data[0].value)/10)*10; // round to 10
+                        var totalwidth = 320;
+                        //Can hardcode xoffset and yoffset values - always same for conceptual and task efficiency bars
+                        xoffset = 18.5;
+                        yoffset = 487.5 - yDiff;
+                        //Border blurs if value not .5
+                        var height = barwidth;
+                        //                        var height =Math.max(-100,Math.min(100,data[i].value)); // clip
+                        var bar = paper.rect(xoffset,yoffset,Math.floor(w1/100*totalwidth), height);
+                        //                        var bar = paper.rect(xoffset+(i-1)*barwidth,yoffset+100-(height>0?height:0),barwidth,Math.abs(height));
+                        bar.attr({
+                            fill:"#B0B0B0",
+                            stroke:"#000",
+                            "stroke-width":"1",
+                            "stroke-linecap":"square"
+                        });
+                        //Text for score
+                        var textxoffset = 242.5;
+                        var textyoffset = 522.5 - yDiff;
+                        var t = paper.text(textxoffset,textyoffset, Math.floor(w1 / 100 * 10) + " / 10");
+                        t.attr({
+                            fill:"#877a78",
+                            "font-size":"14px",
+                            "font-weight":"bold"
+                        });
+
+                        //Task Efficiency result
+                        //yoffset, height and totalwidth will be the same
+                        var w21 = data[20].value;
+                        xoffset = xoffset + 340;
+                        
+                        var bar = paper.rect(xoffset,yoffset,Math.floor(w21/100*totalwidth), height);
+                        //                        var bar = paper.rect(xoffset+(i-1)*barwidth,yoffset+100-(height>0?height:0),barwidth,Math.abs(height));
+                        bar.attr({
+                            fill:"#B0B0B0",
+                            stroke:"#000",
+                            "stroke-width":"1",
+                            "stroke-linecap":"square"
+                        });
+
+                        //Text for score
+                        var textxoffset = 555;
+                        var t = paper.text(textxoffset,textyoffset, w21 + "%");
+                        t.attr({
+                            fill:"#877a78",
+                            "font-size":"14px",
+                            "font-weight":"bold"
+                        });
+                    }//end if !critical
+                }//end if survey
+                else {
+                    //Applicant graph
+                    for (var i = start; i < end; i++) // exlc 21 - time eff
+                    {
+                        var height =Math.max(-100,Math.min(100,data[i].value)); // clip
+                        var bar = paper.rect(
+                                xoffset+barwidth/2+(i-1)*barwidth, // x
+                                yoffset+100, // y (top)
+                                barwidth/2, // width
+                                0 //height
+                            );
+                        bar.attr({
+                            fill:(critical)?"#0073ff":"#00B9FF",
+                            stroke:"#000",
+                            "stroke-width":"1",
+                            "stroke-linecap":"square"
+                        });
+                        animate(bar,{"y": yoffset+100-(height>0?height:0),
+                                    "height":Math.abs(height)}, 1000, 70*i);
+                       
+                        var t = paper.text(xoffset+(i-1)*barwidth+10,yoffset-8, Math.floor(height));
+                        t.attr({
+                            fill:"#005ed0",
+                            "font-size":"10px",
+                            "font-weight":"bold"
+                        });
+                    }
+
+                    //Conceptual Questions and Task Efficiency result
+                    if (!critical)
+                    {
+                        var w1 = data[0].value;
+                        var totalwidth = 320;
+                        //Can hardcode xoffset and yoffset values - always same for conceptual and task efficiency bars
+                        xoffset = 18.5;
+                        yoffset = 487.5 - yDiff + barwidth/2;
+                        //Border blurs if value not .5
+                        var height = barwidth/2;
+                        //                        var height =Math.max(-100,Math.min(100,data[i].value)); // clip
+                        var bar = paper.rect(xoffset,yoffset,0, height);
+                        //                        var bar = paper.rect(xoffset+(i-1)*barwidth,yoffset+100-(height>0?height:0),barwidth,Math.abs(height));
+                        bar.attr({
+                            fill:(critical)?"0073ff":"#00B9FF",
+                            stroke:"#000",
+                            "stroke-width":"1",
+                            "stroke-linecap":"square"
+                        });
+                        animate(bar,{"width": Math.floor(w1/100*totalwidth)}, 2000, 500);
+                        
+
+                        //Text for score
+                        var textxoffset = 242.5;
+                        var textyoffset = 545.5 - yDiff;
+                        var t = paper.text(textxoffset,textyoffset, Math.floor(w1 / 100 * 10) + " / 10");
+                        t.attr({
+                            fill:"#000000",
+                            "font-size":"14px",
+                            "font-weight":"bold"
+                        });
+
+                        //Task Efficiency result
+                        //yoffset, height and totalwidth will be the same
+                        var w21 = data[20].value;
+                        xoffset = xoffset + 340;
+
+                        var bar = paper.rect(xoffset,yoffset,0, height);
+                        //                        var bar = paper.rect(xoffset+(i-1)*barwidth,yoffset+100-(height>0?height:0),barwidth,Math.abs(height));
+                        bar.attr({
+                            fill:(critical)?"0073ff":"#00B9FF",
+                            stroke:"#000",
+                            "stroke-width":"1",
+                            "stroke-linecap":"square"
+                        });
+
+                        animate(bar, {"width": Math.floor(w21/100*totalwidth)}, 2000, 500);
+
+                        //Text for score
+                        var textxoffset = 555;
+                        var t = paper.text(textxoffset,textyoffset, w21 + "%");
+                        t.attr({
+                            fill:"#000000",
+                            "font-size":"14px",
+                            "font-weight":"bold"
+                        });
+                    }//end if !critical
+                }
+            }
+
+            //Sets the overall and critical match values (Benchmark Stability Factor / Individual's match)'
+            function setDeviation(paper, data)
+            {
+                //worst_deviation ; worst_critical_deviation; applicant_deviation; applicant_critical_deviation
+                
+                //Overall match - benchmark
+                var yDiff = 48;
+                var textxoffset = 215;
+                var textyoffset = 417.5 - yDiff;
+                var t = paper.text(textxoffset,textyoffset, data[0].value + "%");
+                t.attr({
+                    fill:"#877a78",
+                    "font-size":"14px",
+                    "font-weight":"bold"
+                });
+
+                //Overall match - individual
+                var textxoffset = 215;
+                var textyoffset = 438 - yDiff;
+                var t = paper.text(textxoffset,textyoffset, data[2].value + "%");
+                t.attr({
+                    fill:"#000000",
+                    "font-size":"14px",
+                    "font-weight":"bold"
+                });
+
+                //Critical match - benchmark
+                var textxoffset = 660;
+                var textyoffset = 417.5 - yDiff;
+                var t = paper.text(textxoffset,textyoffset, data[1].value + "%");
+                t.attr({
+                    fill:"#877a78",
+                    "font-size":"14px",
+                    "font-weight":"bold"
+                });
+
+                //Critical match - individual
+                var textxoffset = 660;
+                var textyoffset = 438 - yDiff;
+                var t = paper.text(textxoffset,textyoffset, data[3].value + "%");
+                t.attr({
+                    fill:"#000000",
+                    "font-size":"14px",
+                    "font-weight":"bold"
+                });
+            }
+
+            /**
+             * Convert number of seconds into time object
+             *
+             * @param integer secs Number of seconds to convert
+             * @return object
+             */
+            function secondsToTime(secs)
+            {
+                //var hours = Math.floor(secs / (60 * 60));
+
+                //var divisor_for_minutes = secs % (60 * 60);
+                var minutes = Math.floor(secs / 60);
+
+                var divisor_for_seconds = secs % 60;
+                var seconds = Math.ceil(divisor_for_seconds);
+
+                // hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                var obj = {
+                    //"h": hours,
+                    "m": minutes,
+                    "s": seconds
+                };
+                
+                var timeStr = "";
+                timeStr = obj.m + ":" + obj.s;
+                
+                
+                return timeStr;
+            }
+
+            //Sets the overall and critical match values (Benchmark Stability Factor / Individual's match)'
+            function setTime(paper, dataBench, dataApplicant)
+            {
+                //average_time; worst_time; average_conceptual_time; worst_conceptual_time;
+                //total_time,; conceptual_time
+
+                var totalBench = secondsToTime(dataBench[0].value);
+                var totalApp = secondsToTime(dataApplicant[0].value);
+                
+                var yDiff = 48;
+
+                //Total time - average
+                var textxoffset = 215;
+                var textyoffset = 635 - yDiff;
+                var t = paper.text(textxoffset,textyoffset, totalBench);
+                t.attr({
+                    fill:"#877a78",
+                    "font-size":"14px",
+                    "font-weight":"bold"
+                });
+
+                //Total time - individual
+                var textxoffset = 215;
+                var textyoffset = 660 - yDiff;
+                var t = paper.text(textxoffset,textyoffset, totalApp);
+                t.attr({
+                    fill:"#000000",
+                    "font-size":"14px",
+                    "font-weight":"bold"
+                });
+
+                /** Conceptual time */
+                var conceptBench = secondsToTime(dataBench[2].value);
+                var conceptApp = secondsToTime(dataApplicant[1].value);
+
+                //Total time - average
+                var textxoffset = 215;
+                var textyoffset = 745 - yDiff;
+                var t = paper.text(textxoffset,textyoffset, conceptBench);
+                t.attr({
+                    fill:"#877a78",
+                    "font-size":"14px",
+                    "font-weight":"bold"
+                });
+
+                //Total time - individual
+                var textxoffset = 215;
+                var textyoffset = 770 - yDiff;
+                var t = paper.text(textxoffset,textyoffset, conceptApp);
+                t.attr({
+                    fill:"#000000",
+                    "font-size":"14px",
+                    "font-weight":"bold"
+                });
+
+                //Reocmmended PDP
+                /** NB check for longer PDP name - "propensity to own / change" etc  */
+            }
+
+            /** Places all ticks, crosses and question marks
+             * 
+             */
+            function setIndicators(paper, data)
+            {
+                var dif = data[0];
+
+                //Ticks / crosses / questions
+                var overall = data[6];
+                var critical = data[7];
+                var conceptual = data[8];
+                var timeConceptual = data[9];
+                var timeTotal = data[10];
+                var attitude = data[11];
+                var task = data[12];
+                var noBacks = data[13];
+                var noChanges = data[14]
+
+                //Feb 2015 - Cropped graph background, so have to adjust for less height
+                var yDiff = 48;
+                var startY = 430 - yDiff;
+                // Ticks / crosses / question marks
+                var ticks = new Array(
+                {"img" : overall.value, "x" : 250, "y" : startY},
+                {"img" : critical.value, "x" : 675, "y" : startY},
+                {"img" : conceptual.value, "x" : 280, "y" : startY + 105},
+                {"img" : timeConceptual.value, "x" : 250, "y" : startY + 325},
+                {"img" : timeTotal.value, "x" : 250, "y" : startY + 215},
+                {"img" : attitude.value, "x" : 425, "y" : startY + 160},
+                {"img" : task.value, "x" : 590, "y" : startY + 105}
+                //                {"img" : noBacks.value, "x" : 0, "y" : 0},
+                //                {"img" : noChanges.value, "x" : 0, "y" : 0}
+            );
+
+                var image = "";
+                for (var i = 0; i < ticks.length; i++)
+                {
+                    var width;
+                    var height;
+                    //Icon images different sizes
+                    switch (ticks[i].img)
+                    {
+                        case "cross":
+                            width = 17;
+                            height = 14;
+                            break;
+                        case "tick":
+                            width = 21;
+                            height = 20;
+                            break;
+                        case "question":
+                            width = 13;
+                            height = 18;
+                            break;
+                    }
+                    var imgName = ticks[i].img + ".jpg";
+                    var img = paper.image("http://www.shadowmatch.co.za/images/graph/"+imgName, ticks[i].x, ticks[i].y, width, height);
+                }
+
+                //Indicators
+                var total = 5;
+                var xoffset = 55;
+                var space = 81.5;
+                var yoffset = 821 - yDiff;
+                width = 40;
+                height = 38;
+
+                //Robots: data from index 1 - 5
+
+                var indicators = new Array();
+
+                for (var i = 1; i <= total; i++)
+                {
+                    var imgName = data[i].value + ".jpg";
+                    var img = paper.image("http://www.shadowmatch.co.za/images/graph/"+imgName, xoffset + (space * (i -1)), yoffset, width, height);
+                }
+
+                //Matching score / PDP
+                //Recommendation = number: matching score / else PDP recommendation
+                var recomm = data[15].value;
+                if (isNaN(recomm))
+                //Show PDP
+                {
+                    xoffset = 560;
+                    yoffset = 830 - yDiff;
+                    var block = paper.text(xoffset, yoffset, "Recommended PDP:");
+                    block.attr({
+                        fill:"#000000",
+                        "font-size":"16px",
+                        "font-weight":"bold",
+                        "font-style":"italic"
+                    });
+
+                    var block = paper.text(xoffset, yoffset + 25, recomm);
+                    block.attr({
+                        fill:"#000000",
+                        "font-size":"16px"
+                    });
+                }
+                //Show score
+                else
+                {
+                    var imgName = recomm + "_10.jpg";
+                    var block = paper.image("http://www.shadowmatch.co.za/images/graph/"+imgName, 452.5, 815 - yDiff, 213, 86);
+                }
+            }
+
+            function setAttitude(paper,data,isBench, params)
+            {
+                /** Attitude graph - arcs
+                 * - Overall radius = 100
+                 */
+                var yDiff = 48;
+                var rad = Math.PI / 180;
+                var r = 95;
+                var cx = 521;
+                var cy = 688 - yDiff;
+
+                //Order of values in xml counterclockwise - manually set array with correct order for for-loop
+                var graphArr = new Array(data[0], data[1], data[2], data[3]);
+                
+                function sector(cx, cy, rVal, startAngle, endAngle, params) {
+                        var x1 = cx + rVal * Math.cos(-startAngle * rad);
+                        var x2 = cx + rVal * Math.cos(-endAngle * rad);
+                        var y1 = cy + rVal * Math.sin(-startAngle * rad);
+                        var y2 = cy + rVal * Math.sin(-endAngle * rad);
+                        return paper.path(["M", cx, cy, "L", x1, y1, "A", rVal, rVal, 0, +(endAngle - startAngle > 180), 0, x2, y2, "z"]).attr(params);
+                    }
+                for (var i = 0; i < 4; i++ )
+                {
+                    var rVal = graphArr[i].value / 100 * r;
+                    startAngle = 0 + 90 * i;
+                    endAngle = 90 + 90 * i;
+                     pie = sector(cx, cy, rVal, startAngle, endAngle, params) 
+                    animate(pie,{'transform':"s2 2"}, 2000, 50);
+                }
+            }
+
+            $(document).ready(function(){
+                $.ajax({
+                    url: './results_files/results.html', //'/worksheet/results.php?applicant_id=443790&department_id=0&nocache=',
+                    dataType: 'xml',
+                    success: function(xml){
+                        var paper = Raphael("graph", 690, 862);
+                        var yDiff = 48;
+                        var startYOffset = 97.5 - yDiff;
+                        var showRecommendations = 1;
+                        
+                        if (showRecommendations)
+                        {
+                            paper.image("http://www.shadowmatch.co.za/images/graph/bg.gif", 0, 0,687,902 - yDiff);
+                        }
+                        else
+                        {
+                            //NB We can't change the dimensions of this gif to match the cropped sections, else the rest of the graph does not align!
+                            paper.image("http://www.shadowmatch.co.za/images/graph/bg_no_recomm.gif", 0, 0,687,902 - yDiff);
+                        }
+                        xm = xml;
+                        
+                        //Draw overall habit bars
+                        x = xml.firstChild.firstElementChild.firstElementChild;
+                        //console.log(x);
+                        setBars(paper, x, "survey",43.5,startYOffset);
+
+                        x = xml.childNodes[0].childNodes[1].firstElementChild;
+                        setBars(paper, x, "applicant",43.5,startYOffset);
+                        
+                        //Draw critical habit bars
+                        x = xml.childNodes[0].childNodes[0].childNodes[1];
+                        setBars(paper, x, "survey",578.5,startYOffset);
+
+                        x = xml.childNodes[0].childNodes[1].childNodes[1];
+                        setBars(paper, x, "applicant",578.5,startYOffset);
+
+                        x = xml.childNodes[0].childNodes[2].attributes;
+                        setDeviation(paper, x);
+
+                        var dataBench = xml.childNodes[0].childNodes[0].childNodes[3].attributes;
+                        var dataApplicant = xml.childNodes[0].childNodes[1].childNodes[3].attributes;
+                        setTime(paper, dataBench, dataApplicant);
+
+                        if (showRecommendations)
+                        {
+                            x = xml.childNodes[0].childNodes[3].attributes;
+                            setIndicators(paper, x);
+                        }
+
+                        params = {fill: "#00b9ff", stroke:"#03A8E7", "stroke-width":"1", "stroke-linecap":"square", opacity: 0.59};
+                        x = xml.childNodes[0].childNodes[1].childNodes[4].attributes;
+                        setAttitude(paper,x, false, params);
+                        //Set opacity 50% to allow overlap
+                        var params = {fill: "#555", stroke:"#999999", "stroke-width":"1", "stroke-linecap":"square", opacity: 0.47};
+                        x = xml.childNodes[0].childNodes[0].childNodes[4].attributes;
+                        setAttitude(paper,x, true,params);
+                    }
+                });
+            });
+        </script>
+
+    
+
+</body></html>
