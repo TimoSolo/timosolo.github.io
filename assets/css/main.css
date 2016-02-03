@@ -3705,9 +3705,19 @@
 
 
 
+/* timosolo */
+
 	p {
 		font-size: 13pt;
 	}
 	blockquote > p {
 		margin: 0;
+	}
+
+	img.left {
+		float: left;
+		padding: 0 30px 10px 0;
+	}
+	img.full {
+		width: 100%;
 	}
