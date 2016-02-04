@@ -4,11 +4,11 @@ image: fastlane.jpg
 
 I was chatting to a friend about my <a href="/blog/free-by-40/">"Free by 40"</a> manifesto, and he recommended I read <a href="http://amzn.to/209C0Xy" target="_blank">"The Fastlane Millionaire"</a>.
 
-<a href="http://amzn.to/209C0Xy" target="_blank"><img src="/images/fastlane-book.jpg" width="200" class="left"></a>I generally judge a book by it's cover (throwing conventional wisdom to the wind) - and this one looked like a typical buy-my-book-and-make-me-rich-quick-scheme... But I also judge a book by the number of 5 stars on amazon. 86% of all reviewers gave it 5 stars, which puts it in the same league as Harry Potter!
+<a href="http://amzn.to/209C0Xy" target="_blank"><img src="/images/fastlane-book.jpg" width="200" class="left"></a>I generally judge a book by it's cover (throwing conventional wisdom to the wind) - and this one looked like a typical buy-my-book-and-make-me-rich-quick-scheme... But I also judge a book by the number of 5 stars on Amazon. 86% of all reviewers gave it 5 stars, which puts it in the same league as Harry Potter!
 
 I must admit it was a page turner - some good advice written with a no-BS flair. 
 
-The first half deals with the different "lanes" on the financial road of life. There are a lot of examples and stories elaborating the points but here's a nice summary of the different types of people characterised by their view on financial topics. (Which category do you relate to? Do you recognise your friends or family? :) - Note that your worldview is unrelated to how much income you receive)
+The first half deals with the different "lanes" on the financial road of life. There are a lot of examples and stories elaborating the points but here's a nice summary of the different types of people characterised by their view on financial topics. (Which category do you relate to? Do you recognise your friends or family? :) - Note that your world-view is unrelated to how much income you receive)
 
 
 <style type="text/css">
@@ -82,13 +82,13 @@ The first half deals with the different "lanes" on the financial road of life. T
 </tr>
 </table>
 
-The book starts with a story of meeting a mythical car - a Lamborghini Coutache and dream of the lavish lifestyle it represented. From the title and blurb you would think that MJ's view of "wealth" would be the typical materialistic accumulation of exotic cars, beach houses and private jets. And yes, that was part of it, but I related more with his other definitions:
+The book starts with a story of meeting a mythical car - a Lamborghini Coutach and dream of the lavish lifestyle it represented. From the title and blurb you would think that MJ's view of "wealth" would be the typical materialistic accumulation of exotic cars, beach houses and private jets. And yes, that was part of it, but I related more with his other definitions:
 
 >Society has conditioned us to believe that wealth is an absolute construct perfected by material possessions.
 
 >We have become a nation of undisciplined spenders and consumers. Where unfettered spending and material extravagance write our obituaries in the ink of stress. Americans once loyally proclaimed, “Give me liberty or give me death.” Now we just say, “Give me.”
 
->Wealth is not authored by material possessions, money, or “stuff,” but by what I call the three fundamental “F’s”... Family (relationships) Fitness (health) Freedom (choice).
+>Wealth is not authored by material possessions, money, or “stuff”, but by what I call the three fundamental “F’s”... Family (relationships) Fitness (health) Freedom (choice).
 
 And this one sounds a lot like my own view in <a href="/blog/free-by-40/">"Free by 40"</a>:
 
