@@ -599,8 +599,13 @@
                     var rVal = graphArr[i].value / 100 * r;
                     startAngle = 0 + 90 * i;
                     endAngle = 90 + 90 * i;
-                     pie = sector(cx, cy, rVal, startAngle, endAngle, params) 
-                    animate(pie,{'transform':"s2 2"}, 2000, 50);
+                     pie = sector(cx, cy, rVal, startAngle, endAngle, params);
+                     if (!isBench)
+                     {
+                         pie.transform("s0.01,0.01,"+cx+","+cy);
+                         animate(pie,{'transform':"s1,1,"+cx+","+cy}, 2000, i*100);
+                     }
+                    //animate(pie,{'transform':"s1,1,"+cx+","+cy}, 1000, i*200+10);
                 }
             }
 
