@@ -15,6 +15,23 @@
         <script src="./results_files/g.raphael.js"></script>
         <script src="./results_files/g.bar.js"></script>
         <script>
+            var paper;
+            var yDiff = 48;
+            var startYOffset = 97.5 - yDiff;
+            var showRecommendations = 1;
+
+            var has_animations = true;
+            function animate(obj, vals, duration, delay)
+            {
+                if (has_animations) {
+                    var anim = Raphael.animation(vals, duration, "easeOut");
+                    obj.animate(anim.delay(delay));
+                } else {
+                    obj.attr(vals); // just set it and forget it
+                }
+            }
+
+
             //Order of definitions correspond to wieghts in XML e.g. w1 = Conceptual Capabilities
             definitions_array = new Array ();
             definitions_array [0] = {
@@ -79,16 +96,6 @@
             };
             //definitions_array[20]={order:21, name:"Time Efficiency", description:"" };
 
-            var has_animations = true;
-            function animate(obj, vals, duration, delay)
-            {
-                if (has_animations) {
-                    var anim = Raphael.animation(vals, duration, "easeOut");
-                    obj.animate(anim.delay(delay));
-                } else {
-                    obj.attr(vals); // just set it and forget it
-                }
-            }
 
             function setApplicantDetails(x)
             {
@@ -120,11 +127,16 @@
                 //$("#pagename").html(page_name_txt);
                 //$("#details").html(applicant_details_txt);
             }
-            function setBars(paper, x, type, xoffset,yoffset) {
 
+            //set all the bars etc to 0 so we can animate:
+            var objstore = {};
+            function initiateCanvas() {
+
+            }
+
+            function setBars(paper, x, type, xoffset,yoffset) {
                 data = x.attributes;
                 var yDiff = 48;
-                        
                 //console.log(data);
                 var barwidth = 24;
                 //Critical match= only 5 habits
@@ -140,25 +152,33 @@
                     end=20
                 }
 
-                if(type=="survey") {
+                if (type=="survey") {
                     for (var i = start; i < end; i++) // exlc 21 - time eff
                     {
                         //Graph bar
                         var height =Math.max(-100,Math.min(100,data[i].value)); // clip
-                        var bar = paper.rect(xoffset+(i-1)*barwidth,yoffset+100-(height>0?height:0),barwidth,Math.abs(height));
-                        bar.attr({
-                            fill:"#B0B0B0",
-                            stroke:"#000",
-                            "stroke-width":"1",
-                            "stroke-linecap":"square"
-                        });
+                        if (objstore[type+"-bar-"+critical+i]) {
+                            objstore[type+"-bar-"+critical+i].attr({"height":height,"y":yoffset+100-(height>0?height:0)});
+                        } else {
+                            objstore[type+"-bar-"+critical+i] = paper.rect(xoffset+(i-1)*barwidth,yoffset+100-(height>0?height:0),barwidth,Math.abs(height));
+                            objstore[type+"-bar-"+critical+i].attr({
+                                fill:"#B0B0B0",
+                                stroke:"#000",
+                                "stroke-width":"1",
+                                "stroke-linecap":"square"
+                            });
+                        }
                         //Text for score
-                        var t = paper.text(xoffset+(i-1)*barwidth+10,yoffset-19, Math.floor(height));
-                        t.attr({
-                            fill:"#666666",
-                            "font-size":"10px",
-                            "font-weight":"bold"
-                        });
+                        if (objstore[type+"-bartext-"+critical+i]) {
+                            objstore[type+"-bartext-"+critical+i].attr({"text":Math.floor(height)});
+                        } else {
+                            objstore[type+"-bartext-"+critical+i] = paper.text(xoffset+(i-1)*barwidth+10,yoffset-19, Math.floor(height));
+                            objstore[type+"-bartext-"+critical+i].attr({
+                                fill:"#666666",
+                                "font-size":"10px",
+                                "font-weight":"bold"
+                            });
+                        }
 
                         // habit titles
                         //Critical habit - use number from attribute name to get correct title
@@ -174,15 +194,21 @@
                         //Use attribute name to get number of habit e.g. c16 = definitions_array[16].name
                         var x=xoffset+((i-1)*barwidth)+15;
                         var y=yoffset+209;
-                        var t = paper.text(x,y, definitions_array[titleNum].name );
+
+                        if (objstore[type+"-text-"+critical+i])
+                        {
+                            objstore[type+"-text-"+critical+i].attr({"text":definitions_array[titleNum].name});
+                        } else {
+                        var t= objstore[type+"-text-"+critical+i] = paper.text(x,y, definitions_array[titleNum].name );
                         //var t = paper.print(x, y, definitions_array[i].name, paper.getFont("Times", 800), 30);
 					
-                        t.attr({
-                            fill:"#333333",
-                            font: '10px Helvetica, Arial',
-                            'text-anchor': 'end'
-                        });
-                        t.rotate(-60,x,y);
+                            t.attr({
+                                fill:"#333333",
+                                font: '10px Helvetica, Arial',
+                                'text-anchor': 'end'
+                            });
+                            t.rotate(-60,x,y);
+                        }
                     } //end for
 
                     // @todo Add Benchmark stability factor / Individual's match
@@ -198,46 +224,55 @@
                         //Border blurs if value not .5
                         var height = barwidth;
                         //                        var height =Math.max(-100,Math.min(100,data[i].value)); // clip
-                        var bar = paper.rect(xoffset,yoffset,Math.floor(w1/100*totalwidth), height);
-                        //                        var bar = paper.rect(xoffset+(i-1)*barwidth,yoffset+100-(height>0?height:0),barwidth,Math.abs(height));
-                        bar.attr({
-                            fill:"#B0B0B0",
-                            stroke:"#000",
-                            "stroke-width":"1",
-                            "stroke-linecap":"square"
-                        });
-                        //Text for score
-                        var textxoffset = 242.5;
-                        var textyoffset = 522.5 - yDiff;
-                        var t = paper.text(textxoffset,textyoffset, Math.floor(w1 / 100 * 10) + " / 10");
-                        t.attr({
-                            fill:"#877a78",
-                            "font-size":"14px",
-                            "font-weight":"bold"
-                        });
+                        if (objstore[type+"-conceptual"]) {
+                            objstore[type+"-conceptual"].attr({width:Math.floor(w1/100*totalwidth)});
+                            objstore[type+"-conceptual-text"].attr({text:Math.floor(w1 / 100 * 10) + " / 10"});
+                        } else {
+                            var bar = objstore[type+"-conceptual"] = paper.rect(xoffset,yoffset,Math.floor(w1/100*totalwidth), height);
+                            //                        var bar = paper.rect(xoffset+(i-1)*barwidth,yoffset+100-(height>0?height:0),barwidth,Math.abs(height));
+                            bar.attr({
+                                fill:"#B0B0B0",
+                                stroke:"#000",
+                                "stroke-width":"1",
+                                "stroke-linecap":"square"
+                            });
+                            //Text for score
+                            var textxoffset = 242.5;
+                            var textyoffset = 522.5 - yDiff;
+                            var t = objstore[type+"-conceptual-text"] = paper.text(textxoffset,textyoffset, Math.floor(w1 / 100 * 10) + " / 10");
+                            t.attr({
+                                fill:"#877a78",
+                                "font-size":"14px",
+                                "font-weight":"bold"
+                            });
+                        }
 
                         //Task Efficiency result
                         //yoffset, height and totalwidth will be the same
                         var w21 = data[20].value;
                         xoffset = xoffset + 340;
-                        
-                        var bar = paper.rect(xoffset,yoffset,Math.floor(w21/100*totalwidth), height);
-                        //                        var bar = paper.rect(xoffset+(i-1)*barwidth,yoffset+100-(height>0?height:0),barwidth,Math.abs(height));
-                        bar.attr({
-                            fill:"#B0B0B0",
-                            stroke:"#000",
-                            "stroke-width":"1",
-                            "stroke-linecap":"square"
-                        });
+                        if (objstore[type+"-task"]) {
+                            objstore[type+"-task"].attr({width:Math.floor(w21/100*totalwidth)});
+                            objstore[type+"-task-text"].attr({text:w21 + "%"});
+                        } else {
+                            var bar = objstore[type+"-task"] = paper.rect(xoffset,yoffset,Math.floor(w21/100*totalwidth), height);
+                            //                        var bar = paper.rect(xoffset+(i-1)*barwidth,yoffset+100-(height>0?height:0),barwidth,Math.abs(height));
+                            bar.attr({
+                                fill:"#B0B0B0",
+                                stroke:"#000",
+                                "stroke-width":"1",
+                                "stroke-linecap":"square"
+                            });
 
-                        //Text for score
-                        var textxoffset = 555;
-                        var t = paper.text(textxoffset,textyoffset, w21 + "%");
-                        t.attr({
-                            fill:"#877a78",
-                            "font-size":"14px",
-                            "font-weight":"bold"
-                        });
+                            //Text for score
+                            var textxoffset = 555;
+                            var t = objstore[type+"-task-text"] = paper.text(textxoffset,textyoffset, w21 + "%");
+                            t.attr({
+                                fill:"#877a78",
+                                "font-size":"14px",
+                                "font-weight":"bold"
+                            });
+                        }
                     }//end if !critical
                 }//end if survey
                 else {
@@ -245,27 +280,32 @@
                     for (var i = start; i < end; i++) // exlc 21 - time eff
                     {
                         var height =Math.max(-100,Math.min(100,data[i].value)); // clip
-                        var bar = paper.rect(
-                                xoffset+barwidth/2+(i-1)*barwidth, // x
-                                yoffset+100, // y (top)
-                                barwidth/2, // width
-                                0 //height
-                            );
-                        bar.attr({
-                            fill:(critical)?"#0073ff":"#00B9FF",
-                            stroke:"#000",
-                            "stroke-width":"1",
-                            "stroke-linecap":"square"
-                        });
-                        animate(bar,{"y": yoffset+100-(height>0?height:0),
+                        if (!objstore[type+"-bar-"+critical+i]) {
+                            var bar = objstore[type+"-bar-"+critical+i] = paper.rect(
+                                    xoffset+barwidth/2+(i-1)*barwidth, // x
+                                    yoffset+100, // y (top)
+                                    barwidth/2, // width
+                                    0 //height
+                                );
+                            bar.attr({
+                                fill:(critical)?"#0073ff":"#00B9FF",
+                                stroke:"#000",
+                                "stroke-width":"1",
+                                "stroke-linecap":"square"
+                            });
+                        }
+                        animate(objstore[type+"-bar-"+critical+i],{"y": yoffset+100-(height>0?height:0),
                                     "height":Math.abs(height)}, 1000, 70*i);
-                       
-                        var t = paper.text(xoffset+(i-1)*barwidth+10,yoffset-8, Math.floor(height));
-                        t.attr({
-                            fill:"#005ed0",
-                            "font-size":"10px",
-                            "font-weight":"bold"
-                        });
+                        if (objstore[type+"-bartext-"+critical+i]) {
+                            objstore[type+"-bartext-"+critical+i].attr({text:Math.floor(height)});
+                        } else {
+                            var t = objstore[type+"-bartext-"+critical+i] = paper.text(xoffset+(i-1)*barwidth+10,yoffset-8, Math.floor(height));
+                            t.attr({
+                                fill:"#005ed0",
+                                "font-size":"10px",
+                                "font-weight":"bold"
+                            });
+                        }
                     }
 
                     //Conceptual Questions and Task Efficiency result
@@ -279,51 +319,64 @@
                         //Border blurs if value not .5
                         var height = barwidth/2;
                         //                        var height =Math.max(-100,Math.min(100,data[i].value)); // clip
-                        var bar = paper.rect(xoffset,yoffset,0, height);
-                        //                        var bar = paper.rect(xoffset+(i-1)*barwidth,yoffset+100-(height>0?height:0),barwidth,Math.abs(height));
-                        bar.attr({
-                            fill:(critical)?"0073ff":"#00B9FF",
-                            stroke:"#000",
-                            "stroke-width":"1",
-                            "stroke-linecap":"square"
-                        });
-                        animate(bar,{"width": Math.floor(w1/100*totalwidth)}, 2000, 500);
+                        if (!objstore[type+"-conceptual"]) {
+                            var bar = objstore[type+"-conceptual"] = paper.rect(xoffset,yoffset,0, height);
+                            //                        var bar = paper.rect(xoffset+(i-1)*barwidth,yoffset+100-(height>0?height:0),barwidth,Math.abs(height));
+                            bar.attr({
+                                fill:(critical)?"0073ff":"#00B9FF",
+                                stroke:"#000",
+                                "stroke-width":"1",
+                                "stroke-linecap":"square"
+                            });
+                        }
+
+                        animate(objstore[type+"-conceptual"],{"width": Math.floor(w1/100*totalwidth)}, 2000, 500);
                         
 
                         //Text for score
-                        var textxoffset = 242.5;
-                        var textyoffset = 545.5 - yDiff;
-                        var t = paper.text(textxoffset,textyoffset, Math.floor(w1 / 100 * 10) + " / 10");
-                        t.attr({
-                            fill:"#000000",
-                            "font-size":"14px",
-                            "font-weight":"bold"
-                        });
+                        if (!objstore[type+"-conceptual-text"]) {
+                            var textxoffset = 242.5;
+                            var textyoffset = 545.5 - yDiff;
+                            var t = objstore[type+"-conceptual-text"] = paper.text(textxoffset,textyoffset, Math.floor(w1 / 100 * 10) + " / 10");
+                            t.attr({
+                                fill:"#000000",
+                                "font-size":"14px",
+                                "font-weight":"bold"
+                            });
+                        } else {
+                            objstore[type+"-conceptual-text"].attr({text:Math.floor(w1 / 100 * 10) + " / 10"});
+                        }
 
                         //Task Efficiency result
                         //yoffset, height and totalwidth will be the same
                         var w21 = data[20].value;
                         xoffset = xoffset + 340;
 
-                        var bar = paper.rect(xoffset,yoffset,0, height);
-                        //                        var bar = paper.rect(xoffset+(i-1)*barwidth,yoffset+100-(height>0?height:0),barwidth,Math.abs(height));
-                        bar.attr({
-                            fill:(critical)?"0073ff":"#00B9FF",
-                            stroke:"#000",
-                            "stroke-width":"1",
-                            "stroke-linecap":"square"
-                        });
+                        if (!objstore[type+"-task"]) {
+                            var bar = objstore[type+"-task"] = paper.rect(xoffset,yoffset,0, height);
+                            //                        var bar = paper.rect(xoffset+(i-1)*barwidth,yoffset+100-(height>0?height:0),barwidth,Math.abs(height));
+                            bar.attr({
+                                fill:(critical)?"0073ff":"#00B9FF",
+                                stroke:"#000",
+                                "stroke-width":"1",
+                                "stroke-linecap":"square"
+                            });
+                        }
 
-                        animate(bar, {"width": Math.floor(w21/100*totalwidth)}, 2000, 500);
+                        animate(objstore[type+"-task"], {"width": Math.floor(w21/100*totalwidth)}, 2000, 500);
 
                         //Text for score
-                        var textxoffset = 555;
-                        var t = paper.text(textxoffset,textyoffset, w21 + "%");
-                        t.attr({
-                            fill:"#000000",
-                            "font-size":"14px",
-                            "font-weight":"bold"
-                        });
+                        if (objstore[type+"-task-text"]) {
+                            objstore[type+"-task-text"].attr({text:w21 + "%"});
+                        } else {
+                            var textxoffset = 555;
+                            var t = objstore[type+"-task-text"] = paper.text(textxoffset,textyoffset, w21 + "%");
+                            t.attr({
+                                fill:"#000000",
+                                "font-size":"14px",
+                                "font-weight":"bold"
+                            });
+                        }
                     }//end if !critical
                 }
             }
@@ -609,25 +662,22 @@
                 }
             }
 
-            $(document).ready(function(){
+            function loadXML(id) {
                 $.ajax({
-                    url: './results_files/results.html', //'/worksheet/results.php?applicant_id=443790&department_id=0&nocache=',
+                    url: './results_files/results'+id+'.html', //'/worksheet/results.php?applicant_id='+id+'&department_id=0&nocache=',
                     dataType: 'xml',
                     success: function(xml){
-                        var paper = Raphael("graph", 690, 862);
-                        var yDiff = 48;
-                        var startYOffset = 97.5 - yDiff;
-                        var showRecommendations = 1;
                         
-                        if (showRecommendations)
-                        {
-                            paper.image("http://www.shadowmatch.co.za/images/graph/bg.gif", 0, 0,687,902 - yDiff);
-                        }
-                        else
-                        {
-                            //NB We can't change the dimensions of this gif to match the cropped sections, else the rest of the graph does not align!
-                            paper.image("http://www.shadowmatch.co.za/images/graph/bg_no_recomm.gif", 0, 0,687,902 - yDiff);
-                        }
+                        
+                        // if (showRecommendations)
+                        // {
+                            
+                        // }
+                        // else
+                        // {
+                        //     //NB We can't change the dimensions of this gif to match the cropped sections, else the rest of the graph does not align!
+                        //     paper.image("http://www.shadowmatch.co.za/images/graph/bg_no_recomm.gif", 0, 0,687,902 - yDiff);
+                        // }
                         xm = xml;
                         
                         //Draw overall habit bars
@@ -667,6 +717,18 @@
                         setAttitude(paper,x, true,params);
                     }
                 });
+            };
+
+
+            $(document).ready(function(){
+                paper = Raphael("graph", 690, 862);
+
+                paper.image("http://www.shadowmatch.co.za/images/graph/bg.gif", 0, 0,687,902 - yDiff);
+                var id = location.hash && location.hash.substring(1) || 1;
+                loadXML(id);
+            });
+            $(window).on('hashchange', function() {
+                loadXML(location.hash.substring(1));
             });
         </script>
 
