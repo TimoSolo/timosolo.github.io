@@ -385,47 +385,55 @@
             function setDeviation(paper, data)
             {
                 //worst_deviation ; worst_critical_deviation; applicant_deviation; applicant_critical_deviation
-                
-                //Overall match - benchmark
-                var yDiff = 48;
-                var textxoffset = 215;
-                var textyoffset = 417.5 - yDiff;
-                var t = paper.text(textxoffset,textyoffset, data[0].value + "%");
-                t.attr({
-                    fill:"#877a78",
-                    "font-size":"14px",
-                    "font-weight":"bold"
-                });
+                if (objstore["deviation0"])
+                {
+                    objstore["deviation0"].attr({text:data[0].value + "%"});
+                    objstore["deviation1"].attr({text:data[1].value + "%"});
+                    objstore["deviation2"].attr({text:data[2].value + "%"});
+                    objstore["deviation3"].attr({text:data[3].value + "%"});
+                }
+                else {
+                    //Overall match - benchmark
+                    var yDiff = 48;
+                    var textxoffset = 215;
+                    var textyoffset = 417.5 - yDiff;
+                    var t = objstore["deviation0"] = paper.text(textxoffset,textyoffset, data[0].value + "%");
+                    t.attr({
+                        fill:"#877a78",
+                        "font-size":"14px",
+                        "font-weight":"bold"
+                    });
 
-                //Overall match - individual
-                var textxoffset = 215;
-                var textyoffset = 438 - yDiff;
-                var t = paper.text(textxoffset,textyoffset, data[2].value + "%");
-                t.attr({
-                    fill:"#000000",
-                    "font-size":"14px",
-                    "font-weight":"bold"
-                });
+                    //Overall match - individual
+                    var textxoffset = 215;
+                    var textyoffset = 438 - yDiff;
+                    var t = objstore["deviation2"] = paper.text(textxoffset,textyoffset, data[2].value + "%");
+                    t.attr({
+                        fill:"#000000",
+                        "font-size":"14px",
+                        "font-weight":"bold"
+                    });
 
-                //Critical match - benchmark
-                var textxoffset = 660;
-                var textyoffset = 417.5 - yDiff;
-                var t = paper.text(textxoffset,textyoffset, data[1].value + "%");
-                t.attr({
-                    fill:"#877a78",
-                    "font-size":"14px",
-                    "font-weight":"bold"
-                });
+                    //Critical match - benchmark
+                    var textxoffset = 660;
+                    var textyoffset = 417.5 - yDiff;
+                    var t = objstore["deviation1"] = paper.text(textxoffset,textyoffset, data[1].value + "%");
+                    t.attr({
+                        fill:"#877a78",
+                        "font-size":"14px",
+                        "font-weight":"bold"
+                    });
 
-                //Critical match - individual
-                var textxoffset = 660;
-                var textyoffset = 438 - yDiff;
-                var t = paper.text(textxoffset,textyoffset, data[3].value + "%");
-                t.attr({
-                    fill:"#000000",
-                    "font-size":"14px",
-                    "font-weight":"bold"
-                });
+                    //Critical match - individual
+                    var textxoffset = 660;
+                    var textyoffset = 438 - yDiff;
+                    var t = objstore["deviation3"] = paper.text(textxoffset,textyoffset, data[3].value + "%");
+                    t.attr({
+                        fill:"#000000",
+                        "font-size":"14px",
+                        "font-weight":"bold"
+                    });
+                }
             }
 
             /**
@@ -466,54 +474,64 @@
                 //average_time; worst_time; average_conceptual_time; worst_conceptual_time;
                 //total_time,; conceptual_time
 
+
                 var totalBench = secondsToTime(dataBench[0].value);
                 var totalApp = secondsToTime(dataApplicant[0].value);
                 
-                var yDiff = 48;
-
-                //Total time - average
-                var textxoffset = 215;
-                var textyoffset = 635 - yDiff;
-                var t = paper.text(textxoffset,textyoffset, totalBench);
-                t.attr({
-                    fill:"#877a78",
-                    "font-size":"14px",
-                    "font-weight":"bold"
-                });
-
-                //Total time - individual
-                var textxoffset = 215;
-                var textyoffset = 660 - yDiff;
-                var t = paper.text(textxoffset,textyoffset, totalApp);
-                t.attr({
-                    fill:"#000000",
-                    "font-size":"14px",
-                    "font-weight":"bold"
-                });
-
                 /** Conceptual time */
                 var conceptBench = secondsToTime(dataBench[2].value);
                 var conceptApp = secondsToTime(dataApplicant[1].value);
 
-                //Total time - average
-                var textxoffset = 215;
-                var textyoffset = 745 - yDiff;
-                var t = paper.text(textxoffset,textyoffset, conceptBench);
-                t.attr({
-                    fill:"#877a78",
-                    "font-size":"14px",
-                    "font-weight":"bold"
-                });
+                if (objstore["time1"]) {
+                    objstore["time1"].attr({text:totalBench});
+                    objstore["time2"].attr({text:totalApp});
+                    objstore["time3"].attr({text:conceptBench});
+                    objstore["time4"].attr({text:conceptApp});
+                } else {
 
-                //Total time - individual
-                var textxoffset = 215;
-                var textyoffset = 770 - yDiff;
-                var t = paper.text(textxoffset,textyoffset, conceptApp);
-                t.attr({
-                    fill:"#000000",
-                    "font-size":"14px",
-                    "font-weight":"bold"
-                });
+                    var yDiff = 48;
+
+                    //Total time - average
+                    var textxoffset = 215;
+                    var textyoffset = 635 - yDiff;
+                    var t = objstore["time1"] = paper.text(textxoffset,textyoffset, totalBench);
+                    t.attr({
+                        fill:"#877a78",
+                        "font-size":"14px",
+                        "font-weight":"bold"
+                    });
+
+                    //Total time - individual
+                    var textxoffset = 215;
+                    var textyoffset = 660 - yDiff;
+                    var t = objstore["time2"] = paper.text(textxoffset,textyoffset, totalApp);
+                    t.attr({
+                        fill:"#000000",
+                        "font-size":"14px",
+                        "font-weight":"bold"
+                    });
+
+
+                    //Total time - average
+                    var textxoffset = 215;
+                    var textyoffset = 745 - yDiff;
+                    var t = objstore["time3"] = paper.text(textxoffset,textyoffset, conceptBench);
+                    t.attr({
+                        fill:"#877a78",
+                        "font-size":"14px",
+                        "font-weight":"bold"
+                    });
+
+                    //Total time - individual
+                    var textxoffset = 215;
+                    var textyoffset = 770 - yDiff;
+                    var t = objstore["time4"] = paper.text(textxoffset,textyoffset, conceptApp);
+                    t.attr({
+                        fill:"#000000",
+                        "font-size":"14px",
+                        "font-weight":"bold"
+                    });
+                }
 
                 //Reocmmended PDP
                 /** NB check for longer PDP name - "propensity to own / change" etc  */
@@ -551,7 +569,7 @@
                 {"img" : task.value, "x" : 590, "y" : startY + 105}
                 //                {"img" : noBacks.value, "x" : 0, "y" : 0},
                 //                {"img" : noChanges.value, "x" : 0, "y" : 0}
-            );
+                );
 
                 var image = "";
                 for (var i = 0; i < ticks.length; i++)
@@ -575,7 +593,9 @@
                             break;
                     }
                     var imgName = ticks[i].img + ".jpg";
-                    var img = paper.image("http://www.shadowmatch.co.za/images/graph/"+imgName, ticks[i].x, ticks[i].y, width, height);
+                    if (objstore["tickcross"+i])
+                        objstore["tickcross"+i].remove()
+                    objstore["tickcross"+i] = paper.image("http://www.shadowmatch.co.za/images/graph/"+imgName, ticks[i].x, ticks[i].y, width, height);
                 }
 
                 //Indicators
@@ -593,27 +613,32 @@
                 for (var i = 1; i <= total; i++)
                 {
                     var imgName = data[i].value + ".jpg";
-                    var img = paper.image("http://www.shadowmatch.co.za/images/graph/"+imgName, xoffset + (space * (i -1)), yoffset, width, height);
+                    if (objstore["robot"+i])
+                        objstore["robot"+i].remove();
+                    objstore["robot"+i] = paper.image("http://www.shadowmatch.co.za/images/graph/"+imgName, xoffset + (space * (i -1)), yoffset, width, height);
                 }
 
                 //Matching score / PDP
                 //Recommendation = number: matching score / else PDP recommendation
                 var recomm = data[15].value;
+                if (objstore["rec1"]) objstore["rec1"].remove();
+                if (objstore["rec2"]) objstore["rec2"].remove();
+                if (objstore["rec3"]) objstore["rec3"].remove();
                 if (isNaN(recomm))
                 //Show PDP
                 {
                     xoffset = 560;
                     yoffset = 830 - yDiff;
-                    var block = paper.text(xoffset, yoffset, "Recommended PDP:");
-                    block.attr({
+                    objstore["rec1"] = paper.text(xoffset, yoffset, "Recommended PDP:");
+                    objstore["rec1"].attr({
                         fill:"#000000",
                         "font-size":"16px",
                         "font-weight":"bold",
                         "font-style":"italic"
                     });
 
-                    var block = paper.text(xoffset, yoffset + 25, recomm);
-                    block.attr({
+                    objstore["rec2"] = paper.text(xoffset, yoffset + 25, recomm);
+                    objstore["rec2"].attr({
                         fill:"#000000",
                         "font-size":"16px"
                     });
@@ -622,7 +647,7 @@
                 else
                 {
                     var imgName = recomm + "_10.jpg";
-                    var block = paper.image("http://www.shadowmatch.co.za/images/graph/"+imgName, 452.5, 815 - yDiff, 213, 86);
+                    objstore["rec3"] = paper.image("http://www.shadowmatch.co.za/images/graph/"+imgName, 452.5, 815 - yDiff, 213, 86);
                 }
             }
 
@@ -647,17 +672,23 @@
                         var y2 = cy + rVal * Math.sin(-endAngle * rad);
                         return paper.path(["M", cx, cy, "L", x1, y1, "A", rVal, rVal, 0, +(endAngle - startAngle > 180), 0, x2, y2, "z"]).attr(params);
                     }
+                if (!objstore["attitude1"+isBench])
+                {
+                    for (var i = 0; i < 4; i++ )
+                    {
+                        startAngle = 0 + 90 * i;
+                        endAngle = 90 + 90 * i;
+                        objstore["attitude"+i+isBench] = sector(cx, cy, r, startAngle, endAngle, params);
+                        objstore["attitude"+i+isBench].transform("s0.01,0.01,"+cx+","+cy);
+                    }
+                }
+
                 for (var i = 0; i < 4; i++ )
                 {
-                    var rVal = graphArr[i].value / 100 * r;
-                    startAngle = 0 + 90 * i;
-                    endAngle = 90 + 90 * i;
-                     pie = sector(cx, cy, rVal, startAngle, endAngle, params);
-                     if (!isBench)
-                     {
-                         pie.transform("s0.01,0.01,"+cx+","+cy);
-                         animate(pie,{'transform':"s1,1,"+cx+","+cy}, 2000, i*100);
-                     }
+                    var rVal = graphArr[i].value / 100 ;//* r;
+                    
+                    animate(objstore["attitude"+i+isBench],{'transform':"s"+rVal+","+rVal+","+cx+","+cy}, (2000 * (!isBench))+1, i*100* (!isBench));
+                     
                     //animate(pie,{'transform':"s1,1,"+cx+","+cy}, 1000, i*200+10);
                 }
             }
@@ -727,8 +758,10 @@
                 var id = location.hash && location.hash.substring(1) || 1;
                 loadXML(id);
             });
-            $(window).on('hashchange', function() {
+            $(window).on('hashchange', function(e) {
                 loadXML(location.hash.substring(1));
+                e.preventDefault(); 
+                return false;
             });
         </script>
 
