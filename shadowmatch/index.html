@@ -538,7 +538,7 @@
 
                 var height = Math.min(dataBench[0].value/ (60*60) * 70, 70);
                 if (!objstore["time-total-bench"])
-                    objstore["time-total-bench"] = paper.rect(25,textyoffset-yDiff,70, 70);
+                    objstore["time-total-bench"] = paper.rect(24,textyoffset-yDiff,72, 70);
                 objstore["time-total-bench"].attr({
                                 fill:"#555",
                                 stroke:"#111",
@@ -546,16 +546,22 @@
                                 height: height,
                                 y:textyoffset-yDiff+(70-height)
                             });
+
                 height = Math.min(dataApplicant[0].value/ (60*60) * 70, 70);
-                if (!objstore["time-total-individual"])
-                    objstore["time-total-individual"] = paper.rect(25,textyoffset-yDiff,70, 70);
-                objstore["time-total-individual"].attr({
-                                fill:"#00b9ff",//:"#00B9FF",
-                                stroke:"#03A8E7",
-                                opacity: 0.59,
-                                height: height,
-                                y:textyoffset-yDiff+(70-height)
-                            });
+                if (!objstore["time-total-individual"]) {
+                    objstore["time-total-individual"] = paper.rect(24,textyoffset-yDiff,72, 70);
+                    objstore["time-total-individual"].attr({
+                                    fill:"#00b9ff",//:"#00B9FF",
+                                    stroke:"#03A8E7",
+                                    opacity: 0.59,
+                                    height: 1,
+                                    y:textyoffset-yDiff+(70-1)
+                                });
+                }
+                animate(objstore["time-total-individual"],{
+                                    height: height,
+                                    y:textyoffset-yDiff+(70-height)
+                                },1000,textyoffset);
 
                 if (!objstore["time-total"])
                     objstore["time-total"] = paper.image("hourglass.png", 19, textyoffset-yDiff-5,82,85);
@@ -567,7 +573,7 @@
 
                 height = Math.min(dataBench[2].value/ (60*60) * 70, 70);
                 if (!objstore["time-conceptual-bench"])
-                    objstore["time-conceptual-bench"] = paper.rect(25,textyoffset-yDiff,70, 70);
+                    objstore["time-conceptual-bench"] = paper.rect(24,textyoffset-yDiff,72, 70);
                 objstore["time-conceptual-bench"].attr({
                                 fill:"#555",
                                 stroke:"#111",
@@ -576,15 +582,20 @@
                                 y:textyoffset-yDiff+(70-height)
                             });
                 height = Math.min(dataApplicant[1].value/ (60*60) * 70, 70);
-                if (!objstore["time-conceptual-individual"])
-                    objstore["time-conceptual-individual"] = paper.rect(25,textyoffset-yDiff,70, 70);
-                objstore["time-conceptual-individual"].attr({
+                if (!objstore["time-conceptual-individual"]) {
+                    objstore["time-conceptual-individual"] = paper.rect(24,textyoffset-yDiff,72, 70);
+                    objstore["time-conceptual-individual"].attr({
                                 fill:"#00b9ff",//:"#00B9FF",
                                 stroke:"#03A8E7",
                                 opacity: 0.59,
+                                height: 1,
+                                y:textyoffset-yDiff+(70-1)
+                            });
+                }
+                animate(objstore["time-conceptual-individual"],{
                                 height: height,
                                 y:textyoffset-yDiff+(70-height)
-                            });
+                            },1000,textyoffset);
 
                 if (!objstore["time-conceptual"])
                     objstore["time-conceptual"] = paper.image("hourglass.png", 19, textyoffset-yDiff-5,82,85);
