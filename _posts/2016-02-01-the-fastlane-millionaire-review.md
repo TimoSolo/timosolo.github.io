@@ -2,7 +2,7 @@
 image: fastlane.jpg
 ---
 
-I was chatting to a friend about my <a href="/blog/free-by-40/">"Free by 40"</a> manifesto, and he recommended I read <a href="http://amzn.to/209C0Xy" target="_blank">"The Fastlane Millionaire"</a>.
+I was chatting to a friend about my <a href="/blog/free-by-40">"Free by 40"</a> manifesto, and he recommended I read <a href="http://amzn.to/209C0Xy" target="_blank">"The Fastlane Millionaire"</a>.
 
 <a href="http://amzn.to/209C0Xy" target="_blank"><img src="/images/fastlane-book.jpg" width="200" class="left"></a>I generally judge a book by it's cover (throwing conventional wisdom to the wind) - and this one looked like a typical buy-my-book-and-make-me-rich-quick-scheme... But I also judge a book by the number of 5 stars on Amazon. 86% of all reviewers gave it 5 stars, which puts it in the same league as Harry Potter!
 
