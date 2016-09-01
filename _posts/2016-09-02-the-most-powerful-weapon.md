@@ -1,5 +1,6 @@
 ---
 image: mandela.png
+excerpt: Ever since my son was born, it's made me look at the world in a different way, and question everything, especially the way the whole school system works.
 ---
 Ever since my son was born, it's made me look at the world in a different way, and <a href="https://commaful.com/play/timosolo/question-everything" target="_blank">question everything</a>, especially the way the whole school system works. Schools seem to be determined to constrain unique young minds into a pre-determined shape that best fits in The Machine. Also known as "preparing the future generation for the productive job market". The first problem is that 90% of the jobs that our kids will get into haven't even been invented yet... The traditional education system is based on a 100 year old view of the world and hasn't changed much since then.
 
