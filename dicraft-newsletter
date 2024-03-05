@@ -1,0 +1,1000 @@
+<!DOCTYPE html><html style="height: 100% !important; width: 100% !important; font-family: &#39;Helvetica Neue&#39;, Helvetica, system-ui, -apple-system, Arial, sans-serif; font-weight: 400; font-style: normal; line-height: 1.5; font-size: 16px; overflow-wrap: break-word; word-wrap: break-word; word-spacing: normal; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 auto; padding: 0;"><head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="format-detection" content="address=no"/>
+    <title></title>
+
+    <!-- Theme-Name: shopify --><!-- Theme-Version: 1.18 -->
+
+    <!-- Outlook font fallback -->
+    <!--[if mso]>
+      <style>
+        * {
+            font-family:sans-serif !important;
+        }
+      </style>
+    <![endif]-->
+
+    <style type="text/css" data-shopify-email="" data-premailer="ignore"> /* Desktop column classes need to be on top of the one in the media query for mobile. */ .one-col .column { max-width: 100% !important; } .two-col .column { max-width: 50% !important; } .three-col .column { max-width: 33.3% !important; } .desktop-and-mobile-grid-padding { padding-top: 10px; } .desktop-and-mobile-grid-loose-padding { padding-top: 25px; } .single-column-grid-padding { padding-top: 20px; } .image--circle { border-radius: 600px; } .image--round { border-radius: 16px; } .desktop-hide { display: none !important; } .social-media__table { text-align: right; max-width: 160px; } .social-media__table--left { text-align: left; max-width: 100%; } .button-padding { padding-top: 30px !important; } .button-narrow { width: 260px; max-width:100%; } .button-wide { width: 400px; max-width:100%; } .button-fixed { width: 100% !important; max-width: 100% !important; } @media screen and (max-width:480px) { u~div .full-wrap { min-width:100vw; } div>u~div .full-wrap { min-width:100%; } .email-container { width:100% !important; margin:auto !important; } .column-container { padding-left:15px !important; padding-right:15px !important; } .stack-column { display:block !important; width:100% !important; max-width:100% !important; text-align:left !important; } .button-padding-full-width { padding-top: 0px !important; } .button-full-width { width:100% !important; text-align:center !important; margin-left:auto !important; margin-right:auto !important; float:none !important; } .button-narrow, .button-wide { width: auto !important; max-width: 100% !important; } .button-mobile-column { padding: 0 !important; } .mobile-hide { display:none !important; } .desktop-hide { display: block !important; } .social-icon { padding: 20px 12px 0 0 !important; } .image { width:100% !important; height:auto !important; } .one-col .column { max-width: 100% !important; } .two-col .column { max-width: 50% !important; } .two-col.wrap-mobile .column { max-width: 100% !important; } .mobile-column-padding { padding-top: 30px; } .three-col .column { max-width: 50% !important; } .mobile-grid-padding { padding-top: 10px; } .mobile-grid-loose-padding, .desktop-and-mobile-grid-loose-padding { padding-top: 30px; } .social-media__table { text-align: left; max-width: 100%; } .mobile-text-column-padding { padding-bottom: 16px; } } /* Work-around for email clients meddling in triggered links. */ a[x-apple-data-detectors], .unstyle-auto-detected-links a, .aBn { border-bottom: 0 !important; cursor: default !important; color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; } /* Prevents Gmail from changing the text color in conversation threads. */ .im { color: inherit !important; } /* Prevents Gmail from displaying a download button on large, non-linked images. */ .a6S { display: none !important; opacity: 0.01 !important; } /* Prevents GMail from overriding the color of links */ .ii a[href] { color: inherit; } .inheritLinkStyle a { color:inherit !important; text-decoration: none !important; } /* Center on Android 4.4 */ div[style*='margin:16px 0'] { margin: 0 !important; } .nav-menu-with-hover:hover { text-decoration: underline; } </style>
+
+    
+
+    
+  <style>body {
+margin: 0 auto !important; padding: 0 !important; height: 100% !important; width: 100% !important; font-family: 'Helvetica Neue', Helvetica, system-ui, -apple-system, Arial, sans-serif; font-weight: 400; font-style: normal; line-height: 1.5; font-size: 16px; overflow-wrap: break-word; word-wrap: break-word; word-spacing: normal;
+}
+img {
+-ms-interpolation-mode: bicubic;
+}
+img {
+border: 0; height: auto; outline: none; text-decoration: none;
+}
+</style>
+</head>
+
+  <body width="100%" style="background-color: #f5d7e2; height: 100% !important; width: 100% !important; font-family: &#39;Helvetica Neue&#39;, Helvetica, system-ui, -apple-system, Arial, sans-serif; font-weight: 400; font-style: normal; line-height: 1.5; font-size: 16px; overflow-wrap: break-word; word-wrap: break-word; word-spacing: normal; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 auto; padding: 0;" class="full-wrap">
+    
+      <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+        We&#39;re delighted to introduce our BRAND NEW seasonal collection of silk ribbons...Designed to capture the essence of each season and add a touch of elegance to your creative endeavours. 
+      </div>
+
+      <!-- Prevents undesired content from leaking into email client's content previews -->
+      
+      
+      
+      
+
+      
+    
+
+    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="background-color: #f5d7e2; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="full-wrap">
+      <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+          
+
+
+
+
+
+
+
+
+
+
+<!-- SHOPIFY // Logo Header -->
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+  <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #ffffff; color: #b999dd; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+        <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td style="font-size: 25px; line-height: 1.2; font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-weight: 400; font-style: normal; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 25px 60px;" align="center" class="column-container">
+            <a href="https://www.dicraft.com" style="color: #b999dd; text-decoration: none; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" target="_blank">
+              
+                
+                  
+                  <img src="https://cdn.shopify.com/shopify-email/mfn5epgpms1dd5xob4l7xzqdq9ap.png?width=960&amp;height=960" alt="Dicraft Embroidery" border="0" width="182" height="182" style="width: 182px; height: 182px; max-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; outline: none; text-decoration: none; border-width: 0;"/>
+                
+              
+            </a>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+          
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+    <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+      <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+          <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+            <td width="600" border="0" align="center" class="" style="width: 100%; max-width: 600px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 0px;">
+              <a href="" target="_blank" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: underline;">
+                <img src="https://cdn.shopify.com/shopify-email/p5mm2fj19mkr7ng8f38fj9sulz0a.jpg?width=1200" class="image" align="center" border="0" width="600" height="400" style="width: 600px; height: 400px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; outline: none; text-decoration: none; border-width: 0;"/>
+              </a>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+  <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+        <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td style="color: #0a6238; font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-weight: 400; font-style: normal; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 40px 60px 10px;" align="center" class="column-container">
+            <p style="color: #9373cf; font-family: Baskerville, Century Gothic, serif; font-size: 55px; line-height: 1.145; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;">Introducing Our Enchanting </p>
+<p style="color: #9373cf; font-family: Baskerville, Century Gothic, serif; font-size: 55px; line-height: 1.145; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">Seasonal Silk Ribbon Collections</p>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+  <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+        <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td style="color: #333333; font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-weight: 400; font-style: normal; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 10px 60px;" align="center" class="column-container">
+            <p style="font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 17px; line-height: 1.471; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;"><span style="color: rgb(55, 65, 81); -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">Designed to capture the essence of each season and add a touch of elegance to your creative endeavours. Crafted with the finest materials and inspired by the unique characteristics of each season, our ribbons are the perfect choice for infusing your projects with the spirit of the seasons. </span></p>
+<p style="color: rgb(147, 115, 207); font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 18px; line-height: 1.444; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;"><em style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><strong style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">This seasonal collection of 4 silk ribbon bundles will be available for purchase for the first time during our </strong></em><em style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><strong style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><span style="color: #39adb3; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">BLACK FRIDAY SALE </span></strong></em><em style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><strong style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">on the...</strong></em><em style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><strong style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><span style="color: #39adb3; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">24th of November!</span></strong></em></p>
+<p style="color: #333333; font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 18px; line-height: 1.444; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;">The collection will be on offer for <strong style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">25% OFF</strong> <strong style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">Plus FREE Gifts</strong>! Offers only valid while stocks last...</p>
+<p style="font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 18px; line-height: 1.444; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">This delightful collection of makes the perfect Christmas (or birthday) gift for a special friend or loved one or even yourself! A colour for everything, endless creative potential to delight the senses and inspire the imagination!</p>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+  <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+        <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td style="color: #333333; font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-weight: 400; font-style: normal; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 10px 60px;" align="center" class="column-container">
+            <p style="color: rgb(168, 145, 211); font-size: 26px; line-height: 1.308; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;"></p>
+<p style="color: #9373cf; font-size: 26px; line-height: 1.308; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;"><strong style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">100% Pure silk</strong></p>
+<p style="color: #9373cf; font-size: 26px; line-height: 1.308; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;"><strong style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">~ Versatile &amp; Unique ~ </strong></p>
+<p style="color: #9373cf; font-size: 26px; line-height: 1.308; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;"><strong style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">~ Colourfast &amp; Washable ~ </strong></p>
+<p style="color: #9373cf; font-size: 26px; line-height: 1.308; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;"><strong style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">~ Variegated &amp; Authentic ~</strong></p>
+<p style="color: rgb(168, 145, 211); font-size: 26px; line-height: 1.308; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;"></p>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+  <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+        <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td style="color: #333333; font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-weight: 400; font-style: normal; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 10px 60px 40px;" align="center" class="column-container">
+            <p style="font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 36px; line-height: 1.222; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;"><em style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">&#39;Bright Spring&#39; Collection </em><span style="color: rgb(55, 65, 81); -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">🌷</span></p>
+<p style="font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 18px; line-height: 1.444; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">Embody the vibrant and cheerful spirit of spring with our &#39;Bright Spring&#39; Silk Ribbon Collection. These silk ribbons showcase a vivid array of colours, just like the blooming flowers and rejuvenated landscapes of the season. Perfect for adding a burst of joy to your springtime creations.</p>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+    <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+      <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+          <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+            <td width="600" border="0" align="center" class="" style="width: 100%; max-width: 600px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 0px;">
+              <a href="https://www.dicraft.com/products/di-van-niekerk-silk-ribbon-gift-box" target="_blank" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: underline;">
+                <img src="https://cdn.shopify.com/shopify-email/dy5e010285pf4r3p13ld0fy28zc2.jpg?width=1200" class="image" align="center" border="0" width="600" height="400" style="width: 600px; height: 400px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; outline: none; text-decoration: none; border-width: 0;"/>
+              </a>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+  <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+        <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td style="color: #333333; font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-weight: 400; font-style: normal; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 40px 60px;" align="center" class="column-container">
+            <p style="font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 36px; line-height: 1.222; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;"><em style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">&#39;Cool Summer&#39; Collection </em>🌞</p>
+<p style="font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 18px; line-height: 1.444; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">Celebrate the cool and refreshing vibes of summer with our &#39;Cool Summer&#39; Silk Ribbon Collection. These silk ribbons feature vibrant colours of this sunny season. Ideal for all your summer-inspired crafts, these ribbons exude the happiness and coolness of Summer.</p>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+    <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+      <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+          <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+            <td width="600" border="0" align="center" class="" style="width: 100%; max-width: 600px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 0px;">
+              <a href="https://www.dicraft.com/products/di-van-niekerk-silk-ribbon-gift-box" target="_blank" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: underline;">
+                <img src="https://cdn.shopify.com/shopify-email/p5mm2fj19mkr7ng8f38fj9sulz0a.jpg?width=1200" class="image" align="center" border="0" width="600" height="400" style="width: 600px; height: 400px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; outline: none; text-decoration: none; border-width: 0;"/>
+              </a>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+  <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+        <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td style="color: #333333; font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-weight: 400; font-style: normal; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 40px 60px;" align="center" class="column-container">
+            <p style="font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 36px; line-height: 1.222; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;"><em style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">&#39;Warm Autumn&#39; Collection </em>🍂</p>
+<p style="font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 18px; line-height: 1.444; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">Welcome the rich and earthy tones of autumn with our &#39;Warm Autumn&#39; Silk Ribbon Collection. These silk ribbons reflect the warmth of the season with their deep reds, rustic oranges, and cozy browns. Add a toasty touch to your projects inspired by the changing leaves. </p>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+    <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+      <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+          <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+            <td width="600" border="0" align="center" class="" style="width: 100%; max-width: 600px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 0px;">
+              <a href="https://www.dicraft.com/products/di-van-niekerk-silk-ribbon-gift-box" target="_blank" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: underline;">
+                <img src="https://cdn.shopify.com/shopify-email/ks5pgwgmikldaii5kb541drex0sf.jpg?width=1200" class="image" align="center" border="0" width="600" height="400" style="width: 600px; height: 400px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; outline: none; text-decoration: none; border-width: 0;"/>
+              </a>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+  <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+        <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td style="color: #333333; font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-weight: 400; font-style: normal; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 40px 60px;" align="center" class="column-container">
+            <p style="font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 36px; line-height: 1.222; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;"><em style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">&#39;True Winter&#39; Collection </em>❄️</p>
+<p style="font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-size: 18px; line-height: 1.444; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;"> Embrace the pure and crisp beauty of winter with our &#39;True Winter&#39; Silk Ribbon Collection. These silk ribbons are perfect for adorning your holiday gifts and adding a touch of magic to your Winter creations.</p>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+    <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+      <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+          <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+            <td width="600" border="0" align="center" class="" style="width: 100%; max-width: 600px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 0px;">
+              <a href="https://www.dicraft.com/products/di-van-niekerk-silk-ribbon-gift-box" target="_blank" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: underline;">
+                <img src="https://cdn.shopify.com/shopify-email/g0yckq1t8lugk29mkgewjmf8dil8.jpg?width=1200" class="image" align="center" border="0" width="600" height="400" style="width: 600px; height: 400px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; outline: none; text-decoration: none; border-width: 0;"/>
+              </a>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+  <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #ffffff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+        <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td style="color: #333333; font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-weight: 400; font-style: normal; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 40px 60px;" align="center" class="column-container">
+            <p style="font-size: 18px; line-height: 1.444; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;">Infuse the spirit of the seasons into your creative pursuits. Whether you&#39;re welcoming the freshness of spring, the warmth of summer, the coziness of autumn, or the magic of winter, our ribbons are your perfect companions. </p>
+<p style="font-size: 18px; line-height: 1.444; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">Elevate your projects and celebrate the seasons with elegance and style. All of these delicious colours are sure to bring lots of joy and add dimension to your embroidery projects. The wide range of colours make it a versatile collection to have and we can&#39;t wait to see how you use them!</p>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+  <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+        <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td align="left" valign="top" width="100%" height="30px" style="border-collapse: collapse; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; mso-line-height-rule: exactly; line-height: 20px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; vertical-align: top;">
+            <!--[if gte mso 15]>   <![endif]-->
+          </td>
+        </tr>
+        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+            <div class="two-col wrap-mobile column-container" style="font-size: 0; text-align: left; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px 50px;">
+              <!--[if mso]>
+                <table role="presentation" width="100%" style="text-align:center;">
+                <tr>
+              <![endif]-->
+
+              <!--[if mso]> <td> <![endif]-->
+
+              <div class="column" style="width: 100%; vertical-align: top; font-size: 0px; display: inline-block; max-width: 50%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                
+
+
+
+
+  <table width="245" cellspacing="0" cellpadding="0" border="0" align="center" class="email-container" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important;">
+    
+      
+
+      
+        <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td border="0" align="center" class="column-container" style="width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 0px 10px;">
+            <a href="https://www.dicraft.com/products/di-van-niekerk-silk-ribbon-gift-box" target="_blank" style="display: block; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: underline;">
+              <img src="https://cdn.shopify.com/shopify-email/0p0k31k0s3ltdgst3mgkapjaxdqw.jpg?width=600" class="image" align="center" border="0" width="225" height="128" style="width: 225px; height: 128px; max-width: 600px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; outline: none; text-decoration: none; border-width: 0;"/>
+            </a>
+          </td>
+        </tr>
+        
+      
+    
+
+    
+
+    
+
+    
+  </tbody></table>
+
+
+              </div>
+
+              <!--[if mso]> </td> <![endif]-->
+
+              <!--[if mso]> <td> <![endif]-->
+
+              <div class="column mobile-column-padding" style="width: 100%; vertical-align: top; font-size: 0px; display: inline-block; max-width: 50%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                
+
+
+
+
+  <table width="245" cellspacing="0" cellpadding="0" border="0" align="center" class="email-container" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important;">
+    
+      
+
+      
+        <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td border="0" align="center" class="column-container" style="width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 0px 10px;">
+            <a href="https://www.dicraft.com/products/di-van-niekerk-silk-ribbon-gift-box" target="_blank" style="display: block; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: underline;">
+              <img src="https://cdn.shopify.com/shopify-email/f5l3lknyvupmeiaclfwyy4bokkbo.jpg?width=600" class="image" align="center" border="0" width="225" height="139" style="width: 225px; height: 139px; max-width: 600px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; outline: none; text-decoration: none; border-width: 0;"/>
+            </a>
+          </td>
+        </tr>
+        
+      
+    
+
+    
+
+    
+
+    
+  </tbody></table>
+
+
+              </div>
+
+              <!--[if mso]> </td> <![endif]-->
+
+              <!--[if mso]> </tr> <![endif]-->
+            </div>
+          </td>
+        </tr>
+        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td align="left" valign="top" width="100%" height="30px" style="border-collapse: collapse; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; mso-line-height-rule: exactly; line-height: 20px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; vertical-align: top;">
+            <!--[if gte mso 15]>   <![endif]-->
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+  <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+        <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td align="left" valign="top" width="100%" height="30px" style="border-collapse: collapse; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; mso-line-height-rule: exactly; line-height: 20px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; vertical-align: top;">
+            <!--[if gte mso 15]>   <![endif]-->
+          </td>
+        </tr>
+        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+            <div class="two-col wrap-mobile column-container" style="font-size: 0; text-align: left; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px 50px;">
+              <!--[if mso]>
+                <table role="presentation" width="100%" style="text-align:center;">
+                <tr>
+              <![endif]-->
+
+              <!--[if mso]> <td> <![endif]-->
+
+              <div class="column" style="width: 100%; vertical-align: top; font-size: 0px; display: inline-block; max-width: 50%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                
+
+
+
+
+  <table width="245" cellspacing="0" cellpadding="0" border="0" align="center" class="email-container" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important;">
+    
+      
+
+      
+        <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td border="0" align="center" class="column-container" style="width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 0px 10px;">
+            <a href="https://www.dicraft.com/products/di-van-niekerk-silk-ribbon-gift-box" target="_blank" style="display: block; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: underline;">
+              <img src="https://cdn.shopify.com/shopify-email/mcg9u0minyfxtcbzg2mkixrz7jkb.jpg?width=600" class="image" align="center" border="0" width="225" height="121" style="width: 225px; height: 121px; max-width: 600px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; outline: none; text-decoration: none; border-width: 0;"/>
+            </a>
+          </td>
+        </tr>
+        
+      
+    
+
+    
+
+    
+
+    
+  </tbody></table>
+
+
+              </div>
+
+              <!--[if mso]> </td> <![endif]-->
+
+              <!--[if mso]> <td> <![endif]-->
+
+              <div class="column mobile-column-padding" style="width: 100%; vertical-align: top; font-size: 0px; display: inline-block; max-width: 50%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                
+
+
+
+
+  <table width="245" cellspacing="0" cellpadding="0" border="0" align="center" class="email-container" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important;">
+    
+      
+
+      
+        <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td border="0" align="center" class="column-container" style="width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 0px 10px;">
+            <a href="https://www.dicraft.com/products/di-van-niekerk-silk-ribbon-gift-box" target="_blank" style="display: block; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: underline;">
+              <img src="https://cdn.shopify.com/shopify-email/i65vr7mxvcbx37raofbxjengertm.jpg?width=600" class="image" align="center" border="0" width="225" height="150" style="width: 225px; height: 150px; max-width: 600px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; outline: none; text-decoration: none; border-width: 0;"/>
+            </a>
+          </td>
+        </tr>
+        
+      
+    
+
+    
+
+    
+
+    
+  </tbody></table>
+
+
+              </div>
+
+              <!--[if mso]> </td> <![endif]-->
+
+              <!--[if mso]> </tr> <![endif]-->
+            </div>
+          </td>
+        </tr>
+        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td align="left" valign="top" width="100%" height="30px" style="border-collapse: collapse; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; mso-line-height-rule: exactly; line-height: 20px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; vertical-align: top;">
+            <!--[if gte mso 15]>   <![endif]-->
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+  <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #ffffff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+        <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td style="color: #333333; font-family: system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; font-weight: 400; font-style: normal; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 40px 60px;" align="center" class="column-container">
+            <p style="color: rgb(81, 80, 80); font-size: 19px; line-height: 1.421; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;">Our annual <strong style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">BLACK FRIDAY SALE</strong> is just around the corner. </p>
+<p style="color: rgb(81, 80, 80); font-size: 19px; line-height: 1.421; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;">You&#39;ll be able to shop <strong style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">25% OFF</strong> a curated selection of some of our bestselling products as well as receive a range of <strong style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">FREE GIFTS! </strong></p>
+<p style="color: rgb(81, 80, 80); font-size: 19px; line-height: 1.421; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 20px; padding: 0;">Keep your eye on our newsletters and social media for more information. </p>
+<p style="color: rgb(81, 80, 80); font-size: 19px; line-height: 1.421; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0;">Until next time, be happy, goed gaan.</p>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+    <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+      <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+          <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+            <td width="600" border="0" align="center" class="column-container" style="width: 100%; max-width: 600px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 30px 60px;">
+              <a href="" target="_blank" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: underline;">
+                <img src="https://cdn.shopify.com/shopify-email/hr0etfohqlksxxkagghbpbwag1mh.png?width=1200" class="image" align="center" border="0" width="480" height="160" style="width: 480px; height: 160px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; outline: none; text-decoration: none; border-width: 0;"/>
+              </a>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </tbody></table>
+
+
+
+
+          
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #fff; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+  <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="background-color: #f5d7e2; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: auto;" class="email-container">
+        
+          <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+            <td style="font-size: 14px; mso-height-rule: exactly; line-height: 22px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 30px 60px 18px;" align="right" class="column-container">
+              <table cellspacing="0" cellpadding="0" border="0" width="100%" style="width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important;">
+                
+                  <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                    
+                      <td style="padding-bottom: 12px; font-family: Verdana, Geneva, sans-serif; font-weight: 400; font-style: normal; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;" valign="top" align="left" class="stack-column">
+                        
+                          <div style="color: #515050; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                            <strong style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">Dicraft Embroidery</strong>
+                          </div>
+                        
+
+                        
+                          <div style="color: #515050; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                            Upper Rose Street<br style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"/>Newlands<br style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"/>Cape Town<br style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"/>Western Cape<br style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"/>7700<br style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"/>South Africa
+                          </div>
+                        
+
+                        
+
+                        
+                      </td>
+                    
+
+                    
+                      <td style="color: #6d8ace; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;" valign="top" align="right" class="stack-column">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="social-media__table" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important;">
+                          <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td class="social-media__table" valign="top" style="font-size: 0px; line-height: 0px; width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+                              <!--[if mso]>
+                                <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="160">
+                                <tr>
+                              <![endif]-->
+
+                              
+                                <!--[if mso]>
+                                  <td align="left" valign="top" width="32" style="padding:3px 0px 2px 0px;">
+                                <![endif]-->
+                                <div style="display: inline-block; max-width: 20px; min-width: 20px; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 12px 12px;">
+                                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important;">
+                                    <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                      <td valign="top" style="width: 20px; height: 20px; min-width: 20px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+                                        <a href="https://www.instagram.com/dicraft_embroidery/" target="_blank" style="text-decoration: none; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                          <img alt="instagram" width="20" height="20" src="https://cdn.shopify.com/shopify-email/o25ys7x4038g9mblvdda6w2xfvso.svg?width=60&amp;height=60&amp;format=png" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; height: auto; outline: none; text-decoration: none; border-width: 0;"/>
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </tbody></table>
+                                </div>
+                                <!--[if mso]> </td> <![endif]-->
+                              
+
+                              
+
+                              
+                                <!--[if mso]>
+                                  <td align="left" valign="top" width="32" style="padding:3px 0px 2px 0px;">
+                                <![endif]-->
+                                <div style="display: inline-block; max-width: 20px; min-width: 20px; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 12px 12px;">
+                                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important;">
+                                    <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                      <td valign="top" style="width: 20px; height: 20px; min-width: 20px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+                                        <a href="https://za.pinterest.com/divanniekerk/" target="_blank" style="text-decoration: none; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                          <img alt="pinterest" width="20" height="20" src="https://cdn.shopify.com/shopify-email/4wiwjygi3mf0kbo0kn8s354ljd7n.svg?width=60&amp;height=60&amp;format=png" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; height: auto; outline: none; text-decoration: none; border-width: 0;"/>
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </tbody></table>
+                                </div>
+                                <!--[if mso]> </td> <![endif]-->
+                              
+
+                              
+
+                              
+                                <!--[if mso]>
+                                  <td align="left" valign="top" width="32" style="padding:3px 0px 2px 0px;">
+                                <![endif]-->
+                                <div style="display: inline-block; max-width: 20px; min-width: 20px; vertical-align: top; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 0 12px 12px;">
+                                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important;">
+                                    <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                      <td valign="top" style="width: 20px; height: 20px; min-width: 20px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+                                        <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fdivanniekerkfanpage" target="_blank" style="text-decoration: none; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                          <img alt="facebook" width="20" height="20" src="https://cdn.shopify.com/shopify-email/7jpsxhqz8wx260ajsewy2zpdqxjm.svg?width=60&amp;height=60&amp;format=png" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; height: auto; outline: none; text-decoration: none; border-width: 0;"/>
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </tbody></table>
+                                </div>
+                                <!--[if mso]> </td> <![endif]-->
+                              
+
+                              
+
+                              
+
+                              
+
+                              
+
+                              <!--[if mso]>
+                                </tr>
+                                </table>
+                              <![endif]-->
+                            </td>
+                          </tr>
+                        </tbody></table>
+                      </td>
+                    
+                  </tr>
+                
+              </tbody></table>
+            </td>
+          </tr>
+        
+
+        
+          
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+              <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 0 60px;" class="column-container">
+                <table cellspacing="0" cellpadding="0" border="0" width="100%" style="width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important;">
+                  <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                    <td height="1" style="background-color: rgba(0, 0, 0, 0.1); mso-line-height-rule: exactly; line-height: 1px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+                      <!--[if gte mso 15]>   <![endif]-->
+                    </td>
+                  </tr>
+                </tbody></table>
+              </td>
+            </tr>
+          
+        
+
+        
+
+        
+
+        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td style="font-size: 14px; mso-height-rule: exactly; line-height: 22px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top; padding: 30px 60px;" align="left" class="column-container">
+            
+              
+
+              <table cellspacing="0" cellpadding="0" border="0" width="100%" style="width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important;">
+                
+                  <tbody><tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                    <td style="font-family: Verdana, Geneva, sans-serif; font-weight: 400; font-style: normal; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;" valign="top" align="left" class="stack-column">
+                      <div style="color: #748fce; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 10px 0 0;">
+                        <a style="color: #748fce; text-decoration: none; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" target="_blank" href="https://www.dicraft.com/account/unsubscribe/preview">
+                          Unsubscribe
+                        </a>
+                      </div>
+                    </td>
+
+                    
+                      <td style="color: #515050; font-family: Verdana, Geneva, sans-serif; font-weight: 400; font-style: normal; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;" valign="top" align="right" class="stack-column">
+                        <p class="inheritLinkStyle" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 1.5; margin: 10px 0 0; padding: 0;">
+                          © 2024 Dicraft Embroidery
+                        </p>
+                      </td>
+                    
+                  </tr>
+                
+              </tbody></table>
+            
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+        </td>
+      </tr>
+
+      <!-- SHOPIFY // ANDROID 6.0 Force Desktop -->
+      <tr style="line-height: 1px; mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" class="mobile-hide">
+        <td align="center" style="min-width: 600px; font-size: 1px; line-height: 1px; mso-line-height-rule: exactly; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; vertical-align: top;">
+          <img src="https://cdn.shopify.com/shopify-email/ivc5fufdfucnxibnsh0qhjn9b2ua.png" alt="" width="600" height="1" style="display: block; width: 600px; height: 1px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; outline: none; text-decoration: none; border-width: 0;" border="0"/>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <!--Made with 💌 by Shopify-->
+  
+
+</body></html>
