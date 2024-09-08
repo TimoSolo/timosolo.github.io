@@ -5,6 +5,8 @@ markdown: kramdown
 permalink: /blog/:title
 gems:
   - jekyll-redirect-from
+include:
+  - .well-known
 defaults:
   -
     scope:
